@@ -89,17 +89,19 @@ export default function Home() {
 		
 		<main className="w-full max-w-[392px] mx-auto pt-[60px]">
 			{/* ======================================== Page header */}
-			<header className="w-full flex items-center justify-between">
+			<header className="w-full flex items-center justify-between px-[20px]">
 				<Link href="/" className="w-[158px] h-[62px] bg-[#DE503C] border-2 border-black flex items-center justify-center text-white text-[28px] leading-[20px] font-jersey">Cookable<br />Recipes.com</Link>
 				<ShareButton />
 			</header>
 			
 			{/* ======================================== Hero section */}
 			<article className="w-full mt-[40px]">
-				<h1 className="text-[28px] font-bold">Hi, there!</h1>
-				<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go LIVE, and<br />we&apos;d love to hear from you!</h3>
+				<header className=" px-[20px]">
+					<h1 className="text-[28px] font-bold">Hi, there!</h1>
+					<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go LIVE, and<br />we&apos;d love to hear from you!</h3>
+				</header>
 				<section className="w-full mt-4 bg-[#FBB900] pt-4">
-					<header className="px-4">
+					<header className="px-[20px]">
 						<h3 className="text-sm font-bold mb-1">Ready?</h3>
 						<h1>
 							<span className="inline-block text-xl font-bold text-white px-4 leading-normal bg-[#FF8F1F] border-2 border-black">
@@ -115,74 +117,79 @@ export default function Home() {
 			</article>
 			
 			{/* ======================================== Main Activity section */}
-			<article className="mt-[130px] bg-[#F5ECDB] rounded-bl-[14px] rounded-br-[14px]">
-				<header className="w-full rounded-tl-0 rounded-tr-0 rounded-br-0 rounded-bl-3xl bg-[#FFFCF7]">
-					<Image src="/assets/cont/nishi-bhat.webp" alt="Nishi Bhat : Design and Stategy partner" className="inline-block w-[52px] h-[52px] ml-1 my-2" width={32} height={32} />
-					<Image src="/assets/cont/sundar.webp" alt="Sunder : Founder" className="inline-block w-[52px] h-[52px] ml-4 my-2" width={32} height={32} />
-				</header>
-				<section className="py-[18px] pl-[18px] pr-[60px]">
-					<section className="bg-white rounded-tl-0 rounded-tr-[14px] rounded-br-[14px] rounded-bl-[14px] px-[20px] pt-[24px] pb-[26px]">
-						<h2 className="text-sm font-bold">Hi, friends!</h2>
-						<p className="text-sm mt-2 leading-[1.3em]">
-							We are building a platform to share cookable recipe videos in any language. And we want to hear from you!
-						</p>
+			<div className="px-[24px]">
+
+				<article className="mt-[130px] bg-[#F5ECDB] rounded-bl-[14px] rounded-br-[14px]">
+					<header className="w-full rounded-tl-0 rounded-tr-0 rounded-br-0 rounded-bl-3xl bg-[#FFFCF7]">
+						<Image src="/assets/cont/nishi-bhat.webp" alt="Nishi Bhat : Design and Stategy partner" className="inline-block w-[52px] h-[52px] ml-1 my-2" width={32} height={32} />
+						<Image src="/assets/cont/sundar.webp" alt="Sunder : Founder" className="inline-block w-[52px] h-[52px] ml-4 my-2" width={32} height={32} />
+					</header>
+					<section className="py-[18px] pl-[18px] pr-[60px]">
+						<section className="bg-white rounded-tl-0 rounded-tr-[14px] rounded-br-[14px] rounded-bl-[14px] px-[20px] pt-[24px] pb-[26px]">
+							<h2 className="text-sm font-bold">Hi, friends!</h2>
+							<p className="text-sm mt-2 leading-[1.3em]">
+								We are building a platform to share cookable recipe videos in any language. And we want to hear from you!
+							</p>
+						</section>
+						<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={() => setShowAboutUs(true)}>
+							<Image src="/assets/icns/waving-hand.svg" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
+							<div className="flex-grow">
+								<h2 className="text-sm font-bold pl-3">Read Our Story</h2>
+							</div>
+							<ArrowNext />
+						</section>
+						<Link href="https://wa.me/9372392734" passHref={true} target="_blank" className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer">
+							<Image src="/assets/icns/WhatsApp.webp" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
+							<div className="flex-grow">
+								<h2 className="text-sm font-bold pl-3">Interested? Let&apos;s Talk</h2>
+							</div>
+							<ArrowNext />
+						</Link>
+						<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={sharePage}>
+							<Image src="/assets/icns/shoutout.svg" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
+							<div className="flex-grow">
+								<h2 className="text-sm font-bold pl-3">Share this link!</h2>
+							</div>
+							<ArrowNext />
+						</section>
+						<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={() => setShowAboutChef(true)}>
+							<Image src="/assets/cont/recipe-slider/khursheed-alam.webp" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
+							<div className="flex-grow">
+								<h2 className="text-sm font-bold pl-3">About Khursheed Alam</h2>
+							</div>
+							<ArrowNext />
+						</section>
 					</section>
-					<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={() => setShowAboutUs(true)}>
-						<Image src="/assets/icns/waving-hand.svg" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
-						<div className="flex-grow">
-							<h2 className="text-sm font-bold pl-3">Read Our Story</h2>
-						</div>
-						<ArrowNext />
-					</section>
-					<Link href="https://wa.me/9372392734" passHref={true} target="_blank" className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer">
-						<Image src="/assets/icns/WhatsApp.webp" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
-						<div className="flex-grow">
-							<h2 className="text-sm font-bold pl-3">Interested? Let&apos;s Talk</h2>
-						</div>
-						<ArrowNext />
-					</Link>
-					<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={sharePage}>
-						<Image src="/assets/icns/shoutout.svg" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
-						<div className="flex-grow">
-							<h2 className="text-sm font-bold pl-3">Share this link!</h2>
-						</div>
-						<ArrowNext />
-					</section>
-					<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={() => setShowAboutChef(true)}>
-						<Image src="/assets/cont/recipe-slider/khursheed-alam.webp" alt="Ready our story" className="inline-block w-[26px] h-[26px]" width={26} height={26} />
-						<div className="flex-grow">
-							<h2 className="text-sm font-bold pl-3">About Khursheed Alam</h2>
-						</div>
-						<ArrowNext />
-					</section>
-				</section>
-			</article>
+				</article>
+			</div>
 			
 			{/* ======================================== Video section */}
-			<article className="mt-8 bg-[#F5ECDB] rounded-[14px] px-[18px] pt-[50px] flex">
-				<header className="flex-grow">
-					<h1 className="text-xl font-bold leading-[1.2em]">Explore cookable<br />recipe videos</h1>
-					<h2 className="text-sm font-semibold mt-4 inline-block">
-						How does it work?
-						<button onClick={() => { setShowVideo(true); }} className="flex h-[32px] mt-1 items-center justify-between gap-3 px-3 bg-[#6D50E8] rounded-full text-white font-semibold text-sm">
-							Watch Intro
-							<span className="inline-block w-[20px] h-[20px] bg-white rounded-full">
-								<span className="w-[20px] h-[20px] flex items-center justify-center group">
-									<span className="inline-block w-[12px] h-[2px] bg-[#1D1C20] transition-all duration-500 group-hover:w-[16px] relative after:w-[8px] after:h-[8px] after:block after:border-t-2 after:border-r-2 after:border-[#1D1C20] after:absolute after:right-0 after:top-[-3px] after:rotate-45"></span>
+			<div className="px-[24px]">
+				<article className="mt-8 bg-[#F5ECDB] rounded-[14px] px-[18px] pt-[50px] flex">
+					<header className="flex-grow">
+						<h1 className="text-lg font-bold leading-[1.2em]">Explore cookable<br />recipe videos</h1>
+						<h2 className="text-sm font-semibold mt-4 inline-block">
+							How does it work?
+							<button onClick={() => { setShowVideo(true); }} className="flex h-[32px] mt-1 items-center justify-between gap-3 px-3 bg-[#6D50E8] rounded-full text-white font-semibold text-sm">
+								Watch Intro
+								<span className="inline-block w-[20px] h-[20px] bg-white rounded-full">
+									<span className="w-[20px] h-[20px] flex items-center justify-center group">
+										<span className="inline-block w-[12px] h-[2px] bg-[#1D1C20] transition-all duration-500 group-hover:w-[16px] relative after:w-[8px] after:h-[8px] after:block after:border-t-2 after:border-r-2 after:border-[#1D1C20] after:absolute after:right-0 after:top-[-3px] after:rotate-45"></span>
+									</span>
 								</span>
-							</span>
-						</button>
-					</h2>
-				</header>
-				<figure className="w-[160px] relative">
-					<Image src="/assets/cont/video-area/like.webp" alt="Like" className="w-[60px] h-[60px] absolute left-[-30px] top-[-30px]" width={48} height={48} />
-					<Image src="/assets/cont/video-area/mobile.webp" alt="Cookable Recipes" className="w-full" width={140} height={140} />
-				</figure>
-			</article>
+							</button>
+						</h2>
+					</header>
+					<figure className="w-[142px] relative">
+						<Image src="/assets/cont/video-area/like.webp" alt="Like" className="w-[60px] h-[60px] absolute left-[-20px] top-[-36px]" width={48} height={48} />
+						<Image src="/assets/cont/video-area/mobile.webp" alt="Cookable Recipes" className="w-full" width={140} height={140} />
+					</figure>
+				</article>
+			</div>
 			
 			{/* ======================================== Pre footer */}
 			<article className="mt-8 relative">
-				<h1 className="absolute left-[20px] top-[40px] font-jersey text-[38px] bold text-[#6D50E8] leading-[0.8em]">Made with love <br/>[for food]</h1>
+				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[38px] bold text-[#6D50E8] leading-[0.8em]">Made with love <br/>[for food]</h1>
 				<Image src="/assets/cont/pre-footer/made-with-love-for-food.webp" width={400} height={270} alt="Made with love for food" className="inline-blokc w-full h-auto" />
 			</article>
 
