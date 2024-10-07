@@ -97,8 +97,8 @@ export default function Home() {
 			{/* ======================================== Hero section */}
 			<article className="w-full mt-[40px]">
 				<header className=" px-[20px]">
-					<h1 className="text-[28px] font-bold">Hi, there!</h1>
-					<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go live and we<br />would like your feedback first. </h3>
+					<h1 className="text-[28px] font-bold">Hello!</h1>
+					<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go live but we<br />would like your feedback first. </h3>
 				</header>
 				<section className="w-full mt-4 bg-[#FBB900] pt-4">
 					<header className="px-[20px]">
@@ -125,7 +125,7 @@ export default function Home() {
 					</header>
 					<section className="py-[18px] pl-[18px] pr-[60px]">
 						<section className="bg-white rounded-tl-0 rounded-tr-[14px] rounded-br-[14px] rounded-bl-[14px] px-[20px] pt-[24px] pb-[26px]">
-							<h2 className="text-sm font-bold">Hi, friends!</h2>
+							<h2 className="text-sm font-bold">Hey there!</h2>
 							<p className="text-sm mt-2 leading-[1.3em]">
 								We are building a platform to share cookable recipes in any language. We would love to hear your feedback on our first recipe.
 							</p>
@@ -188,7 +188,7 @@ export default function Home() {
 			
 			{/* ======================================== Pre footer */}
 			<article className="mt-8 relative">
-				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[34px] bold text-[#6D50E8] leading-[0.8em]">Made with love <br/><span className="text-[28px]">[The secret  ingredient in all recipes]</span></h1>
+				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[34px] bold text-[#6D50E8] leading-[0.8em] drop-shadow-[0_4px_24px_rgba(254,243,217)]">Made with love <br/><span className="text-[28px]">[The secret ingredient<br />in all recipes]</span></h1>
 				<Image src="/assets/cont/pre-footer/made-with-love-for-food.webp" width={400} height={270} alt="Made with love for food" className="inline-blokc w-full h-auto" />
 			</article>
 

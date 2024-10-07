@@ -15,7 +15,10 @@ const config: Config = {
         "jersey": ["var(--font-jersey-15)", "sans-serif"],
       },
       boxShadow: {
-        "about-us-btn": "0 8px 12px rgba(138, 138, 138, 0.25)"
+        "about-us-btn": "0 8px 12px rgba(138, 138, 138, 0.25)",
+      },
+      textShadow: {
+        "pre-footer-text": "0 4px 24px #FEF3D9",
       }
     },
   },
