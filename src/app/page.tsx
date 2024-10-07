@@ -187,15 +187,15 @@ export default function Home() {
 			</div> */}
 			
 			{/* ======================================== Pre footer */}
-			<article className="mt-8 relative">
-				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[34px] bold text-[#6D50E8] leading-[0.8em] drop-shadow-[0_4px_24px_rgba(254,243,217)]">Made with love <br/><span className="text-[28px]">[The secret ingredient<br />in all recipes]</span></h1>
+			<h1 className="w-full mt-8 text-center leading-8 font-jersey text-[16px] bold text-white bg-[#DE503C]">Made with love [The secret ingredientin all recipes]</h1>
+			<article className="relative">
 				<Image src="/assets/cont/pre-footer/made-with-love-for-food.webp" width={400} height={270} alt="Made with love for food" className="inline-blokc w-full h-auto" />
+				<p className="absolute left-0 bottom-0 py-3 w-full text-xs text-white text-center flex items-center justify-center gap-2"><span className="text-[24px]">&copy;</span> <span>Copyright 2024</span></p>
 			</article>
 
 			{/* ======================================== Footer section */}
-			<footer className="w-ful bg-[#6D50E8] py-3">
-				<p className="text-xs text-white text-center flex items-center justify-center gap-2"><span className="text-[24px]">&copy;</span> <span>Copyright 2024</span></p>
-			</footer>
+			{/* <footer className="w-ful bg-[#6D50E8] ">
+			</footer> */}
 		</main>;
 	</>
 }
