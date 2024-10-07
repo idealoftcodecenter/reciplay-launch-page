@@ -65,11 +65,11 @@ export default function Home() {
 			</header>
 			<section className="px-[12px]">
 				<p className="pt-6 text-xs">Is a renowned chef, with over a million viewers whom we have onboarded to work on his content. To get a taste of what we have been cooking, we share one single recipe of his, Bhindi Popcorn, a truly unique snack which we hope you will try to cook for your family and share your feedback</p>
-				<a href="#" className="flex items-center justify-between w-full bg-[#EBE7FC] rounded-[10px] p-[10px] my-8">
+				<Link target='_blank' href="https://alpha-dev.reciplay.in/infolor/66f97a2d4dd4beb9397e28c8" passHref={true} className="flex items-center justify-between w-full bg-[#EBE7FC] rounded-[10px] p-[10px] my-8">
 					<Image src="/assets/cont/recipe-slider/bhindi-popcorn.webp" className='inline-block h-[45px] w-[78px] rounded-xl border-1 border-[#F5C413]' alt="Bhindi Popcorn" width={200} height={200} />
 					<span className="text-sm flex-grow font-bold pl-4 leading-[1.2em]">Explore Bhindi<br />Popcorn Now!</span>
 					<ArrowNext />
-				</a>
+				</Link>
 				<footer className="px-[32px] pb-[32px] mt-8">
 					<Link target='_blank' href="https://wa.me/9372392734" passHref={true} className="block h-[40px] leading-[40px] w-full bg-[#6D50E8] rounded-full text-white text-sm text-center font-bold relative shadow-about-us-btn">I want to Know More</Link>
 				</footer>
@@ -98,7 +98,7 @@ export default function Home() {
 			<article className="w-full mt-[40px]">
 				<header className=" px-[20px]">
 					<h1 className="text-[28px] font-bold">Hi, there!</h1>
-					<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go LIVE, and<br />we&apos;d love to hear from you!</h3>
+					<h3 className="font-bold text-[20px] leading-[24px]">We are ready to go live and we<br />would like your feedback first. </h3>
 				</header>
 				<section className="w-full mt-4 bg-[#FBB900] pt-4">
 					<header className="px-[20px]">
@@ -118,7 +118,6 @@ export default function Home() {
 			
 			{/* ======================================== Main Activity section */}
 			<div className="px-[24px]">
-
 				<article className="mt-[130px] bg-[#F5ECDB] rounded-bl-[14px] rounded-br-[14px]">
 					<header className="w-full rounded-tl-0 rounded-tr-0 rounded-br-0 rounded-bl-3xl bg-[#FFFCF7]">
 						<Image src="/assets/cont/nishi-bhat.webp" alt="Nishi Bhat : Design and Stategy partner" className="inline-block w-[52px] h-[52px] ml-1 my-2" width={32} height={32} />
@@ -128,7 +127,7 @@ export default function Home() {
 						<section className="bg-white rounded-tl-0 rounded-tr-[14px] rounded-br-[14px] rounded-bl-[14px] px-[20px] pt-[24px] pb-[26px]">
 							<h2 className="text-sm font-bold">Hi, friends!</h2>
 							<p className="text-sm mt-2 leading-[1.3em]">
-								We are building a platform to share cookable recipe videos in any language. And we want to hear from you!
+								We are building a platform to share cookable recipes in any language. We would love to hear your feedback on our first recipe.
 							</p>
 						</section>
 						<section className="flex items-center justify-between bg-white rounded-[14px] mt-[14px] px-[12px] py-[9px] cursor-pointer" onClick={() => setShowAboutUs(true)}>
@@ -164,7 +163,7 @@ export default function Home() {
 			</div>
 			
 			{/* ======================================== Video section */}
-			<div className="px-[24px]">
+			{/* <div className="px-[24px]">
 				<article className="mt-8 bg-[#F5ECDB] rounded-[14px] px-[18px] pt-[50px] flex">
 					<header className="flex-grow">
 						<h1 className="text-lg font-bold leading-[1.2em]">Explore cookable<br />recipe videos</h1>
@@ -185,11 +184,11 @@ export default function Home() {
 						<Image src="/assets/cont/video-area/mobile.webp" alt="Cookable Recipes" className="w-full" width={140} height={140} />
 					</figure>
 				</article>
-			</div>
+			</div> */}
 			
 			{/* ======================================== Pre footer */}
 			<article className="mt-8 relative">
-				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[38px] bold text-[#6D50E8] leading-[0.8em]">Made with love <br/>[for food]</h1>
+				<h1 className="absolute left-[24px] top-[40px] font-jersey text-[34px] bold text-[#6D50E8] leading-[0.8em]">Made with love <br/><span className="text-[28px]">[The secret  ingredient in all recipes]</span></h1>
 				<Image src="/assets/cont/pre-footer/made-with-love-for-food.webp" width={400} height={270} alt="Made with love for food" className="inline-blokc w-full h-auto" />
 			</article>
 

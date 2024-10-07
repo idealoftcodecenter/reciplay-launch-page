@@ -20,5 +20,9 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: [
+    'transform translate-y-full',
+    'transform translate-y-0',
+  ]
 };
 export default config;
